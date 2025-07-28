@@ -8,35 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark nightlife theme */
+    --background: 222 20% 8%;
+    --foreground: 330 15% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 15% 12%;
+    --card-foreground: 330 15% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 15% 12%;
+    --popover-foreground: 330 15% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Neon pink primary */
+    --primary: 330 85% 65%;
+    --primary-foreground: 222 20% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Dark secondary */
+    --secondary: 222 15% 18%;
+    --secondary-foreground: 330 15% 95%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 15% 15%;
+    --muted-foreground: 330 8% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Neon turquoise accent */
+    --accent: 180 85% 65%;
+    --accent-foreground: 222 20% 8%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 85% 65%;
+    --destructive-foreground: 330 15% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 15% 20%;
+    --input: 222 15% 15%;
+    --ring: 330 85% 65%;
 
-    --radius: 0.5rem;
+    /* Neon colors for nightlife theme */
+    --neon-pink: 330 85% 65%;
+    --neon-gold: 45 90% 70%;
+    --neon-turquoise: 180 85% 65%;
+    --neon-purple: 270 85% 75%;
+    
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-pink)), hsl(var(--neon-turquoise)));
+    --gradient-dark: linear-gradient(180deg, hsl(222 20% 8%), hsl(222 25% 12%));
+    --gradient-glow: radial-gradient(circle, hsl(var(--neon-pink) / 0.3), transparent 70%);
+    
+    /* Shadows */
+    --shadow-neon: 0 0 30px hsl(var(--neon-pink) / 0.5);
+    --shadow-glow: 0 10px 40px hsl(var(--neon-pink) / 0.3);
+    
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
