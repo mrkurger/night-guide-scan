@@ -2,13 +2,20 @@ import { Search, MapPin, User, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-const Header = () => {
+interface HeaderProps {
+  onLogoClick?: () => void;
+}
+
+const Header = ({ onLogoClick }: HeaderProps) => {
   return (
     <header className="sticky top-0 z-50 bg-card/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div 
+            className="flex items-center space-x-2 cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={onLogoClick}
+          >
             <div className="w-10 h-10 bg-gradient-to-br from-neon-pink to-neon-turquoise rounded-lg flex items-center justify-center animate-neon-pulse">
               <MapPin className="w-6 h-6 text-white" />
             </div>
